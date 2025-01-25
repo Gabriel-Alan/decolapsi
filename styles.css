@@ -243,7 +243,7 @@ footer a {
         font-size: 1.45rem; /* Menor para telas pequenas */
     }
     .dobra-content h2, .dobra-content h3 {
-        font-size: 1.1rem; /* Menor para telas pequenas */
+        font-size: 1rem; /* Menor para telas pequenas */
     }
     .dobra-content5 {
         flex: 1;
