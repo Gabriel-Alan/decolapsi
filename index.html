@@ -5,183 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio Agenda Decolada</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --cor-detalhes-h1: #8e0356;
-            --cor-texto: #000;
-            --cor-fundo: #eff0f2;
-            --cor-detalhes: #a3045c;
-            --cor-cta: #28a745;
-            --font-principal: 'Inter', sans-serif;
-        }
-
-        body {
-            margin: 0;
-            font-family: var(--font-principal);
-            background-color: var(--cor-fundo);
-            color: var(--cor-texto);
-            line-height: 1.6;
-        }
-        .align-left{
-            text-align: left;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            padding: 20px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        header img{
-            width: 70%;
-        }
-
-        .dobras {
-            margin-bottom: 50px;
-        }
-
-        .dobra {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            margin-bottom: 30px;
-            padding: 20px;
-            background: var(--cor-fundo);
-            border: 1px solid var(--cor-detalhes);
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .dobra img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .dobra-content {
-            flex: 1;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .dobra-content h1 {
-            color: var(--cor-detalhes-h1);
-            font-size: 2rem;
-            font-weight: 700;
-            text-decoration: underline;
-        }
-
-        .dobra-content h2, .dobra-content h3 {
-            color: var(--cor-detalhes);
-            font-size: 1.5rem;
-            margin-top: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background: var(--cor-cta);
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-align: center;
-            transition: background 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .btn:hover {
-            background: #218838;
-        }
-
-        .faq {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .faq-item {
-            background: var(--cor-fundo);
-            border: 1px solid var(--cor-detalhes);
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-            position: relative;
-        }
-
-        .faq-item:hover {
-            background: #f5f5f5;
-        }
-
-        .faq-item h2 {
-            font-size: 1.2rem;
-            margin: 0;
-            font-weight: 700;
-            color: var(--cor-detalhes-h1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq-item h2::after {
-            content: '+';
-            font-size: 1.5rem;
-            color: var(--cor-detalhes);
-            transition: transform 0.3s ease;
-        }
-
-        .faq-item.active h2::after {
-            content: '-';
-            transform: rotate(180deg);
-        }
-
-        .faq-item p {
-            font-size: 1rem;
-            margin-top: 10px;
-            display: none;
-            color: var(--cor-texto);
-        }
-
-        .faq-item.active p {
-            display: block;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 50px;
-            padding: 20px;
-            background: var(--cor-detalhes);
-            color: #fff;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: underline;
-        }
-        @media (max-width: 768px) {
-            body {
-                font-size: 16px; /* Tamanho menor para tablets */
-            }
-            .dobra-content h1 {
-                font-size: 1.55rem; /* Menor para telas pequenas */
-            }
-            .dobra-content h2, .dobra-content h3 {
-                font-size: 1.1rem; /* Menor para telas pequenas */
-            }
-            .faq-item h2 {
-                font-size: 1rem; /* Menor para telas pequenas */
-            }
-            .faq-item p {
-                font-size: 0.9rem; /* Menor para telas pequenas */
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -197,7 +21,7 @@
                     <h2>Participe do Desafio Agenda Decolada e aprenda o meu método para você nunca mais sentir medo de captar pacientes.</h2>
                     <h3>10 a 14 de fevereiro, às 20h | 100% online Ao Vivo pelo Zoom</h3>
                     <img src="" alt="" width="80%" height="300px">
-                    <a href="#" class="btn">Quero acesso ao método agora</a>
+                    <a href="https://pay.kiwify.com.br/kSGbPBM" class="btn">Quero acesso ao método agora</a>
                     <p>(Você está a um clique de dar adeus à agenda vazia)</p>
                 </div>
             </div>
@@ -207,38 +31,49 @@
         <div class="dobras">
             <div class="dobra">
                 <div class="dobra-content">
-                    <h1>Eu passei três meses com o consultório alugado e sem um único paciente para atender. Hoje, minha realidade é bem diferente.</h1>
-                    <h2>Minha agenda está decolada e não tenho horários disponíveis para novos pacientes.</h2>
-                    <p>
+                    <h1 class="align-left">Eu passei três meses com o consultório alugado e sem um único paciente para atender. Hoje, minha realidade é bem diferente. Minha agenda está decolada e não tenho horários disponíveis para novos pacientes.</h1>
+                    <h2 class="align-left"><strong>De:</strong> Luanna Gomes <br><strong>Para:</strong> Uma futura psicóloga decolada
+                    </h2>
+                    <p class="align-left">
                         Psi, eu sei como é difícil empreender na psicologia. Eu senti na pele a frustração de não conseguir pacientes, enquanto os boletos continuavam chegando.
-                        É desanimador ver a baixa procura, e a vontade de desistir aumenta a cada dia. Mas quando decidi colocar em prática as estratégias corretas, tudo mudou.
                     </p>
-                    <p>Agora, quero ajudar você a fazer de 2025 o melhor ano da sua carreira!</p>
+                    <p class="align-left">
+                        É desanimador ver a baixa procura, e a vontade de desistir aumenta a cada dia. Mas quando decidi colocar em prática as estratégias corretas, <i><strong><u>tudo mudou.</u></strong></i>
+                    </p> 
+                    <p class="align-left">
+                        Para transformar minha agenda estagnada em uma agenda decolada, eu precisei <strong>colocar em prática 5 estratégias poderosas.</strong>
+                    </p>
+                    <p class="align-left">
+                        Agora, quero ajudar você a fazer de 2025 o melhor ano da sua carreira! Por isso, decidi ensinar na prática essas 5 estratégias e para você dar adeus à sua agenda vazia.
+                    </p>
+                    <p class="align-left">
+                        <strong>Mas, antes de te dizer quais são essas estratégias, eu preciso te fazer algumas perguntas…</strong>
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- Dobra 3 -->
         <div class="dobras">
-            <div class="dobra">
+            <div class="dobra3">
                 <div class="dobra-content">
                     <h1>Se você responder SIM, o Desafio Agenda Decolada é para você.</h1>
-                    <ul>
-                        <li>Você tem dificuldade em se posicionar no Instagram e se sente perdida sobre como captar pacientes de forma eficaz?</li>
-                        <li>Você já se sentiu frustrada ao postar algum conteúdo e não receber nenhuma mensagem perguntando sobre os atendimentos?</li>
-                        <li>Você já se sentiu frustrada ao ver sua agenda estagnada, mesmo após meses de trabalho duro para atrair pacientes?</li>
-                        <li>Você se sente insegura ao tentar captar pacientes e acaba dependendo apenas de indicações de amigos e familiares?</li>
-                        <li>Você tem dificuldade em atrair pacientes pelo Instagram, mesmo seguindo várias dicas de marketing?</li>
+                    <ul class="align-left">
+                        <li><img src="quadrado.png" alt="" width="20px"> Você tem dificuldade em se posicionar no Instagram e se sente perdida sobre como captar pacientes de forma eficaz?</li>
+                        <li><img src="quadrado.png" alt="" width="20px"> Você já se sentiu frustrada ao postar algum conteúdo e não receber nenhuma mensagem perguntando sobre os atendimentos?</li>
+                        <li><img src="quadrado.png" alt="" width="20px"> Você já se sentiu frustrada ao ver sua agenda estagnada, mesmo após meses de trabalho duro para atrair pacientes?</li>
+                        <li><img src="quadrado.png" alt="" width="20px"> Você se sente insegura ao tentar captar pacientes e acaba dependendo apenas de indicações de amigos e familiares?</li>
+                        <li><img src="quadrado.png" alt="" width="20px"> Você tem dificuldade em atrair pacientes pelo Instagram, mesmo seguindo várias dicas de marketing?</li>
                     </ul>
-                    <h3>Se você se IDENTIFICOU com QUALQUER uma das perguntas acima, é de total interesse seu, e de extrema urgência para a sua carreira que você participe do Desafio: Agenda Decolada.</h3>
+                    <h3 class="align-left">Se você se IDENTIFICOU com QUALQUER uma das perguntas acima, é de total interesse seu, e de extrema urgência para a sua carreira que você participe do <strong>Desafio: Agenda Decolada.</strong></h3>
                 </div>
             </div>
         </div>
 
         <!-- Dobra 4 -->
         <div class="dobras">
-            <div class="dobra">
-                <div class="dobra-content">
+            <div class="dobra4">
+                <div class="dobra-content align-left">
                     <h1>Isso porque:</h1>
                     <h2>Pela primeira vez, eu vou revelar as 5 estratégias que eu uso para atrair pacientes e decolar a minha agenda:</h2>
                     <div>
@@ -248,7 +83,7 @@
                         </div>
                         <div>
                             <div><img src="megafone.png" class="icons" alt="" width="100px"></div>
-                            <strong>Instagram:</strong> Como se posicionar no Instagram com intencionalidade e criar narrativas que atraem pacientes.
+                            <strong>Instagram:</strong> Como usar o Instagram com intencionalidade e criar narrativas que atraem pacientes.
                         </div>
                         <div>
                             <div><img src="networking.png" class="icons" alt="" width="100px"></div>
@@ -271,7 +106,7 @@
         <!-- Dobra 5 -->
         <div class="dobras">
             <div class="dobra">
-                <div class="dobra-content">
+                <div class="dobra-content align-left">
                     <h1>Você vai aprender diretamente comigo:</h1>
                     <h2>Luanna Gomes.</h2>
                     <p>
@@ -287,7 +122,7 @@
         <!-- Dobra 6 -->
         <div class="dobras">
             <div class="dobra">
-                <div class="dobra-content">
+                <div class="dobra-content align-left">
                     <h1>Pela primeira e última vez, todo esse treinamento estará ao seu alcance por um preço simbólico.</h1>
                     <h2>Ao Vivo e sem Replay!</h2>
                     <ul>
