@@ -212,7 +212,6 @@ ul{
 
 .carousel-item {
     flex: 0 0 90%;
-    border: 1px solid var(--cor-detalhes);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
