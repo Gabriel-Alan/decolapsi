@@ -20,17 +20,15 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 header {
-    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header img{
-    width: 70%;
+    width: 100%;
 }
 
 .dobras {
@@ -44,8 +42,6 @@ header img{
     margin-bottom: 30px;
     padding: 20px;
     background: var(--cor-fundo);
-    border: 1px solid var(--cor-detalhes);
-    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +112,7 @@ header img{
     background: var(--cor-cta);
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
     font-weight: bold;
     text-align: center;
     transition: background 0.3s ease;
