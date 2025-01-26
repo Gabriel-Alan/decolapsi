@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Obrigado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #8e0356, #4a002d);
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        h1 {
+            color: #333333;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #555555;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            background-color: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .progress-bar div {
+            width: 95%;
+            height: 20px;
+            background-color: #4caf50;
+        }
+        p {
+            color: #666666;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #4caf50;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            .button {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aguarde! Falta apenas um passo para você garantir o seu lugar no Desafio.</h1>
+        <h2>Seu pedido está sendo processado em… 95%</h2>
+        <div class="progress-bar">
+            <div></div>
+        </div>
+        <p>Toque no botão verde e entre no grupo VIP do Desafio para receber todas as informações e materiais exclusivos para você dar adeus à sua agenda estagnada.</p>
+        <a href="https://wa.me/" class="button">Entrar no grupo VIP agora</a>
+    </div>
+</body>
+</html>

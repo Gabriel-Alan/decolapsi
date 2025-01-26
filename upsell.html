@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Upsell</title>
+  <style>
+    body {
+      font-family: 'Loubag', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #eff0f2;
+      color: #000;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #8e0356;
+      margin: 10px 0;
+    }
+
+    h2, h3 {
+      margin: 10px 0;
+    }
+
+    .alert {
+      background-color: #fffbcc;
+      border: 1px solid #ffd700;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .progress {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      background-color: #eff0f2;
+      border: 1px solid black;
+      height: 20px;
+      border-radius: 50px;
+    }
+
+    .progress-bar {
+      background-color: #4caf50;
+      height: 20px;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      border-radius: 50px;
+      text-align: right;
+      padding: 1px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #4caf50;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-align: center;
+      display: inline-block;
+      width: 68%;
+    }
+
+    .buttons a.no {
+      background-color: #a3045c;
+    }
+
+    .lesson {
+      margin: 20px 0;
+    }
+
+    .lesson img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      background-color: #8e0356;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+      margin: 20px 0;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    .expert-photo {
+      max-width: 200px;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+
+    .text-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .header {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Dobra 1 -->
+    <div class="text-content">
+      <h1>Aguarde! Já estamos preparando o seu lugar no Desafio…</h1>
+      <div class="progress">
+        <div class="progress-bar">50%</div>
+      </div>
+      <h3>AVISO: Se você clicar no botão 'voltar’, seu pedido poderá ser processado duas vezes.</h3>
+
+      <h1>Você só verá essa página UMA ÚNICA VEZ, então leia com atenção, pois ela desaparecerá para sempre quando você sair.</h1>
+      <h2>Garanta sua gravação do Desafio Agenda Decolada e não perca nada!</h2>
+      <p>Imprevistos acontecem, mas com acesso por 1 ano, você pode assistir quantas vezes quiser e aplicar as estratégias no seu tempo!</p>
+      
+      <div class="buttons">
+        <a href="#checkout">Sim, eu quero garantir a gravação</a>
+        <a href="#obrigado" class="no">Não, vou deixar essa oportunidade passar</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Dobra 2 -->
+    <h1>Você por dentro de todas as estratégias, mesmo que aconteça um imprevisto.</h1>
+    
+    <div class="lesson">
+      <h2>Aula 01</h2>
+      <p>Como se posicionar e atrair o público certo para o seu consultório.</p>
+    </div>
+    <div class="lesson">
+      <h2>Aula 02</h2>
+      <p>Como se posicionar no Instagram com intencionalidade.</p>
+    </div>
+    <div class="lesson">
+      <h2>Aula 03</h2>
+      <p>Como criar narrativas que atraem pacientes e decolam a sua agenda.</p>
+    </div>
+    <div class="lesson">
+      <h2>Aula 04</h2>
+      <p>Como alcançar mais pessoas e encher o WhatsApp de pacientes interessados no seu atendimento.</p>
+    </div>
+    <div class="lesson">
+      <h2>Aula 05</h2>
+      <p>Como transformar o Networking em uma fonte que atrai pacientes.</p>
+    </div>
+
+    <div class="price">
+      <p>Tenha acesso a esse desafio por 1 ano para assistir quantas vezes quiser por apenas:</p>
+      <h2>12x de R$9,74</h2>
+    </div>
+
+    <div class="buttons">
+      <a href="#checkout">Sim, eu quero garantir a gravação</a>
+      <a href="#obrigado" class="no">Não, vou deixar essa oportunidade passar</a>
+    </div>
+  </div>
+</body>
+</html>
