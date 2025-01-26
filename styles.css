@@ -13,7 +13,7 @@
     color: var(--cor-fundo);
 }
 #preco{
-    font-size: 6rem;
+    font-size: 4rem;
     text-decoration: none;
 }
 .card-2{
@@ -311,6 +311,61 @@ footer a {
     }
     .carousel-item {
         flex: 0 0 85%;
+    }
+    .faq-item h2 {
+        font-size: 1rem; /* Menor para telas pequenas */
+    }
+    .faq-item p {
+        font-size: 0.9rem; /* Menor para telas pequenas */
+    }
+}
+@media (max-width: 420px) {
+    body {
+        font-size: 14px; /* Tamanho menor para tablets */
+    }
+    #h1-alt-1{
+        font-size: 1.5rem;
+    }
+    #h1-alt-2{
+        font-size: 1.5rem;
+    }
+    #h2-alt-1{
+        font-size: 0.8rem;
+    }
+    #h3-alt-1{
+        text-decoration: underline;
+        font-size: 0.7rem;
+    }
+    .dobra-content h1 {
+        font-size: 1.4rem; /* Menor para telas pequenas */
+    }
+    .dobra-content h2, .dobra-content h3 {
+        font-size: 1rem; /* Menor para telas pequenas */
+    }
+    .dobra-content5 {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .dobra-content5 h1 {
+        font-size: 1rem;
+        text-align: left;
+        font-weight: 600;
+    }
+    
+    .dobra-content5 h2{
+        text-align: left;
+        font-size: 2rem;
+    }
+    .carousel-item {
+        flex: 0 0 80%;
+    }
+    .card {
+        padding: 1%;
+        border-radius: 25px;
+        border: 1px solid #8e0356;
+        background-color: white;
     }
     .faq-item h2 {
         font-size: 1rem; /* Menor para telas pequenas */
