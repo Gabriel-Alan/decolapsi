@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página de Upsell</title>
   <style>
+    :root {
+        --cor-detalhes-h1: #8e0356;
+        --cor-texto: #000;
+        --cor-fundo: #eff0f2;
+        --cor-detalhes: #a3045c;
+        --cor-cta: #28a745;
+        --font-principal: 'Inter', sans-serif;
+    }
     body {
       font-family: 'Loubag', Arial, sans-serif;
       margin: 0;
@@ -105,16 +113,56 @@
       border-radius: 10px;
     }
 
-    .price {
-      background-color: #8e0356;
-      color: #fff;
-      padding: 15px;
-      text-align: center;
-      margin: 20px 0;
-      border-radius: 5px;
-      font-size: 1.2em;
+    .dobra3 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px;
+        background: var(--cor-fundo);
+    }
+    .dobra-content {
+        flex: 1;
+        text-align: center;
+    }
+    .dobra-content h1 {
+        color: var(--cor-detalhes-h1);
+        font-size: 1.25rem;
+        font-weight: 700;
     }
 
+    .dobra-content h2, .dobra-content h3 {
+        color: var(--cor-detalhes);
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .card {
+        padding: 3%;
+        border-radius: 25px;
+        border: 1px solid #8e0356;
+        background-color: white;
+    }
+    li{
+        text-align: left;
+    }
+    #preco{
+    font-size: 4rem;
+    text-decoration: none;
+    }
+    .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: var(--cor-cta);
+        color: #fff;
+        text-decoration: none;
+        border-radius: 25px;
+        font-weight: bold;
+        text-align: center;
+        transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+        background: #218838;
+    }
     .expert-photo {
       max-width: 200px;
       margin-right: 20px;
@@ -181,14 +229,15 @@
         <img src="dia-5.jpg" alt="">
     </div>
 
-    <div class="price">
-      <p>Tenha acesso a esse desafio por 1 ano para assistir quantas vezes quiser por apenas:</p>
-      <h2>12x de R$9,74</h2>
-    </div>
-
-    <div class="buttons">
-      <a href="#checkout">Sim, eu quero garantir a gravação</a>
-      <a href="#obrigado" class="no">Não, vou deixar essa oportunidade passar</a>
+    <div class="dobras">
+        <div class="dobra3">
+            <div class="dobra-content card">
+                <img src="logo-1.png" alt="" width="60%">
+                <h1 >Tenha acesso a esse desafio por 1 ano para assistir quantas vezes quiser por apenas:</h1>
+                <h3>12x de<span id="preco">R$9,74</span></h3>
+                <a href="https://pay.kiwify.com.br/kSGbPBM" class="btn">Quero garantir essa oportunidade</a>
+            </div>
+        </div>
     </div>
   </div>
 </body>
