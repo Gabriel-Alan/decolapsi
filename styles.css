@@ -52,7 +52,6 @@ header img{
 
 .dobra-content {
     flex: 1;
-    padding: 20px;
     text-align: center;
 }
 .dobra4,.dobra3 {
@@ -71,11 +70,6 @@ header img{
     justify-content: center;
     align-items: center;
     gap: 40px;
-}
-.dobra-content {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
 }
 
 .dobra-content h1 {
