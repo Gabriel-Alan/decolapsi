@@ -72,6 +72,7 @@ header img{
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-bottom: 20px;
 }
 
 .dobra-content h1 {
@@ -112,7 +113,7 @@ header img{
     font-weight: bold;
     text-align: center;
     transition: background 0.3s ease;
-    margin-top: 10px;
+
 }
 
 .btn:hover {
