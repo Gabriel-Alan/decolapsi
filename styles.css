@@ -58,12 +58,13 @@ header img{
     flex-wrap: wrap;
     align-items: center;
     padding: 20px;
-    background: white;
+    background: var(--cor-fundo);
 }
 .card {
     padding: 3%;
     border-radius: 25px;
     border: 1px solid #8e0356;
+    background-color: white;
 }
 .lista{
     display: flex;
