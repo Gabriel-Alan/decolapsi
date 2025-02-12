@@ -66,13 +66,13 @@
         font-size: 1.5rem;
     }
     #dobra2 h2{
-        width: 95%;
+        width: 90%;
         font-size: 1rem;
         color: black;
         text-align: left;
     }
     #dobra2 p{
-        width: 95%;
+        width: 90%;
         font-size: 1rem;
         text-align: left;
     }
@@ -85,6 +85,22 @@
         flex-direction: column;
         align-items: center;
     }
+    #dobra4{
+        background-color: #8e0356;
+        color: white;
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #dobra4 h1{
+        color: white;
+    }
+    #dobra4 p{
+        width: 90%;
+        text-align: left;
+    }
     .card {
       border: 2px solid #8e0356;
       background-color: transparent;
@@ -92,6 +108,147 @@
       margin: 10px;
       border-radius: 10px;
       text-align: center;
+    }
+    .card h2{
+        font-size: 1.2rem;
+    }
+    #dobra5{
+        width: 90%;
+        margin-top: 20px;
+        border: 2px solid #8e0356;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dobra5 h1{
+        width: 90%;
+    }
+    #dobra5 ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dobra5 ul li{
+        font-size: 1rem;
+        width: 80%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .card2{
+      border: 2px solid #8e0356;
+      background-color: #8e0356;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+    }
+    .card2 h2{
+        color: white;
+        font-size: 1.2rem;
+    }
+    #dobra6{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dobra7{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #dobra7 img{
+        width: 100%;
+    }
+    #dobra8{
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #dobra8 img{
+        width: 100%;
+    }
+    #dobra9{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dobra11{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #dobra13{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+    }
+    #dobra13 h1, h2{
+        width: 100%;
+        text-align: left;
+    }
+    #dobra14{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card3 {
+      border: 2px solid #8e0356;
+      background-color: transparent;
+      padding: 15px;
+      margin: 10px auto;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .carousel {
+        display: flex;
+        gap: 15px;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding: 15px 0;
+    }
+
+    .carousel::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .carousel::-webkit-scrollbar-thumb {
+        background: var(--cor-detalhes);
+        border-radius: 10px;
+    }
+
+    .carousel::-webkit-scrollbar-track {
+        background: var(--cor-fundo);
+    }
+
+    .carousel-item {
+        flex: 0 0 60%;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 33%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: auto;
     }
     .highlight {
       font-weight: bold;
@@ -108,11 +265,11 @@
 
     .buttons {
         width: 90%;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 
     .buttons a {
@@ -123,7 +280,9 @@
       border-radius: 5px;
       font-size: 1.1em;
     }
-
+    .align-left{
+        text-align: left;
+    }
     .price {
       background-color: #8e0356;
       color: #fff;
@@ -131,6 +290,77 @@
       border-radius: 5px;
       font-size: 1.3em;
       margin-top: 30px;
+    }
+    .faq {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+    }
+
+    .faq-item {
+        background: var(--cor-fundo);
+        border: 1px solid var(--cor-detalhes);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        position: relative;
+    }
+    .dobra-content5 {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    }
+
+    .dobra-content5 h1 {
+        color: var(--cor-detalhes-h1);
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .dobra-content5 h2, .dobra-content5 h3 {
+        color: var(--cor-detalhes);
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    .faq-item:hover {
+        background: #f5f5f5;
+    }
+
+    .faq-item h2 {
+        font-size: 1.2rem;
+        margin: 0;
+        gap: 10px;
+        font-weight: 700;
+        color: var(--cor-detalhes-h1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-item h2::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: var(--cor-detalhes);
+        transition: transform 0.3s ease;
+    }
+
+    .faq-item.active h2::after {
+        content: '-';
+        transform: rotate(180deg);
+    }
+
+    .faq-item p {
+        font-size: 1rem;
+        margin-top: 10px;
+        display: none;
+        color: var(--cor-texto);
+    }
+
+    .faq-item.active p {
+        display: block;
     }
   </style>
 </head>
@@ -188,59 +418,189 @@
       <p>✓ Ter sua agenda cheia de pacientes qualificados</p>
       <p>✓ Ser bem remunerada e valorizada</p>
     </section>
-    
     <section id="dobra5">
       <h1>Para quem é essa formação?</h1>
-      <p>Psicólogas iniciantes, experientes que querem mais pacientes e aquelas que desejam liberdade financeira.</p>
+      <ul>
+        <li>Psicólogas que estão começando a carreira e desejam aprender estratégias eficazes desde o início para evitar os erros comuns.</li>
+        <li>Psicólogas que ainda não têm um consultório e estão buscando a confiança e o conhecimento para dar esse passo.</li>
+        <li>Psicólogas que já possuem seu próprio consultório, mas enfrentam dificuldades em captar pacientes e lotar suas agendas.</li>
+        <li>Psicólogas que se sentem frustradas com a baixa procura e dependem apenas de indicações, sem saber como se posicionar no mercado.</li>
+        <li>Psicólogas que desejam se especializar e se tornar referências em suas áreas de atuação.</li>
+        <li>Psicólogas que buscam melhorar sua comunicação, gestão financeira e estratégias de captação de pacientes.</li>
+        <li>Psicólogas que buscam liberdade financeira e a capacidade de escolher seus horários de trabalho.</li>
+      </ul>
     </section>
-    
     <section id="dobra6">
       <h1>O que você vai aprender</h1>
-      <p>Descubra os módulos exclusivos que irão transformar sua prática na psicologia clínica.</p>
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 1: Boas-vindas</h2>
+            <p>Nesse primeiro módulo, você será acolhida e preparada para a jornada que está prestes a iniciar. Aqui, vamos estabelecer as bases para o seu sucesso.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 2: Destravando a Sua Mentalidade Empreendedora</h2>
+            <p>Neste módulo, você vai ativar o seu modo GPS e descobrir o verdadeiro significado de ser uma empreendedora na psicologia.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 3: Posicionamento Profissional I</h2>
+            <p>Neste módulo, você vai aprender a se posicionar como uma autoridade na psicologia e a escolher o nicho de atuação que mais se alinha com sua paixão e habilidades.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 4: Posicionamento Profissional II</h2>
+            <p>Neste módulo, você vai aprofundar seu entendimento sobre o posicionamento profissional e aprender a construir uma base sólida para sua prática.</p>
+        </div>
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 5: Psi no Digital I</h2>
+            <p>Construa uma carreira próspera com gestão eficaz e autoridade no mercado.</p>
+        </div>
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 6: Psi no Digital II – Arrume a Casa</h2>
+            <p>Neste módulo, você vai aprender a organizar sua presença digital para maximizar sua visibilidade e atrair pacientes.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 7: Psi no Digital III – Conteúdo e Narrativa</h2>
+            <p>Neste módulo, você vai aprender a criar conteúdos impactantes e narrativas que atraem pacientes, utilizando as ferramentas digitais de forma eficaz.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 8: Gestão Financeira</h2>
+            <p>Neste módulo, você vai aprender a gerenciar suas finanças de forma eficaz, garantindo a saúde financeira do seu consultório.</p>
+        </div>
+        
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 9: Burocracias do Consultório</h2>
+            <p>Neste módulo, você vai aprender sobre as principais burocracias que envolvem a gestão do seu consultório, garantindo que você esteja em conformidade com as normas e possa focar no que realmente importa: atender seus pacientes.</p>
+        </div>
+        <div class="card2">
+            <img src="" alt="">
+            <h2>Módulo 10: Monetização para Além dos Atendimentos</h2>
+            <p>Neste módulo, você vai explorar diversas possibilidades de monetização que vão além do atendimento clínico, ampliando suas fontes de renda e potencializando sua carreira.</p>
+        </div>
+        <div class="buttons">
+            <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+        </div>
     </section>
-    
     <section id="dobra7">
-      <h1>Quem você será após essa formação?</h1>
-      <p>De uma psicóloga estagnada para uma referência na área.</p>
+        <img src="dobra7.jpg" alt="">
+        <div class="buttons">
+            <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+        </div>
     </section>
-    
     <section id="dobra8">
-      <h1>Por que esse método funciona?</h1>
-      <p>Garantia de resultados com suporte e estratégia comprovada.</p>
+        <img src="dobra8.jpg" alt="">
+        <div class="buttons">
+            <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+        </div>
     </section>
-    
     <section id="dobra9">
-      <h1>Veja as Psis que já decolaram!</h1>
-      <p>Depoimentos de quem já aplicou e viu os resultados.</p>
+        <h1>Veja as Psis que já decolaram!</h1>
+        <div class="carousel">
+            <div class="carousel-item">
+                <img src="depoimento1.jpg" alt="Depoimento 1">
+            </div>
+            <div class="carousel-item">
+                <img src="depoimento2.jpg" alt="Depoimento 2">
+            </div>
+            <div class="carousel-item">
+                <img src="depoimento3.jpg" alt="Depoimento 3">
+            </div>
+            <div class="carousel-item">
+                <img src="depoimento4.jpg" alt="Depoimento 4">
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+        </div>
     </section>
     
-    <section id="dobra10">
+    <!-- <section id="dobra10">
       <h1>Garantia Incondicional de 7 Dias</h1>
       <p>Se dentro de 7 dias você não estiver satisfeita, devolvemos 100% do seu dinheiro.</p>
-    </section>
+    </section> -->
     
     <section id="dobra11">
-      <h1>Bônus Especial: Curso Psi Instagramável</h1>
-      <p>Aprenda a usar o Instagram estrategicamente para captar mais pacientes.</p>
+        <div class="card3">
+            <h1>Faça a sua inscrição agora mesmo!</h1>
+            <h2>Formação Decola Psi</h2>
+            <p><strong>10 módulos completos</strong> = R$1.997,00</p>
+            <p><strong>Material de apoio</strong> = R$197,00</p>
+            <p><strong>Aula com convidado especial</strong> = R$497,00</p>
+            <p><strong>Comunidade exclusiva no WhatsApp comigo</strong> = <em>INESTIMÁVEL</em></p>
+            <p><strong>Super presente:</strong> Curso Psi Instagramável = R$997,00</p>
+            <h2>De: R$1.997,00</h2>
+            <h2>Por: 12x de R$100,10</h2>
+            <div class="buttons">
+              <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+            </div>
+        </div>
     </section>
     
-    <section id="dobra12">
-      <h1>Perguntas Frequentes</h1>
-      <p>Respostas para suas principais dúvidas sobre o curso e o pagamento.</p>
-    </section>
+    <!-- <section id="dobra12">
+        <h1>Perguntas Frequentes</h1>
+
+    </section> -->
     
     <section id="dobra13">
-      <h1>Sobre a Criadora do Método</h1>
-      <p>Conheça a trajetória de Luanna Gomes, psicóloga e mentora de sucesso.</p>
+        <h1 id="text-white">Você vai aprender diretamente comigo:</h1>
+        <h2 id="text-white">Luanna Gomes.</h2>
+        <p class="align-left">
+            Sou psicóloga, mas não qualquer psi, sou uma psi da vida real que enxerguei na psicologia clínica a oportunidade de construir uma carreira sólida que me permitisse usufruir de uma vida de liberdade e realização.
+        </p>
+        <p class="align-left">
+            Após ter vivenciado todos os processos da construção dessa carreira, decidi ajudar outras psicólogas a terem o mesmo sucesso no consultório.
+        </p>
+        <p class="align-left">
+            Hoje sou Mentora de Psicólogas e irei ajudar você, psi, a construir a sua uma carreira sólida, próspera e decolada por meio da psicologia clínica.
+        </p>
+        <div class="buttons">
+            <a href="#">QUERO GARANTIR A MINHA VAGA AGORA</a>
+        </div>
     </section>
     
     <section id="dobra14">
-      <div class="price">
-        <p>Faça a sua inscrição agora mesmo!</p>
-        <h2>De: R$1.997,00</h2>
-        <h2>Por: 12x de R$100,10</h2>
-      </div>
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq align-left">
+            <div class="faq-item">
+                <h2>Onde irei receber o acesso do desafio?</h2>
+                <p>Após finalizar sua compra, você será direcionado para uma página de inscrição finalizada, com um link do nosso grupo exclusivo.</p>
+            </div>
+            <div class="faq-item">
+                <h2>O próximo lote vai estar mais caro?</h2>
+                <p>Sim. Este é um evento inédito e exclusivo que nunca fiz antes e o preço já está extremamente acessível. Então, quem não aproveitar agora, vai acabar pagando mais caro.</p>
+            </div>
+            <div class="faq-item">
+                <h2>O conteúdo ficará gravado?</h2>
+                <p>Não, mas você pode ter acesso à gravação da imersão adquirindo ela de forma separada por meio do link na página de checkout.</p>
+            </div>
+            <div class="faq-item">
+                <h2>Quais são as formas de pagamento?</h2>
+                <p>PIX e Cartão de crédito.</p>
+            </div>
+        </div>
     </section>
   </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+        });
+    </script>
 </body>
 </html>
